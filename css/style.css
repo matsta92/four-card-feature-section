@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+h1, h2 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 700;
+}
+
+.light-weight {
+  font-weight: 200;
+}
+
+.four-card {
+  max-width: 500px;
+  padding: 80px 30px 30px 30px;
+}
+
+.four-card__title {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.four-card__text {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.cards__card {
+  max-width: 350px;
+  margin: 30px auto 30px auto;
+  padding: 25px;
+  -webkit-box-shadow: 5px 5px 40px hsla(234, 12%, 34%, 0.3);
+          box-shadow: 5px 5px 40px hsla(234, 12%, 34%, 0.3);
+  border-radius: 10px;
+  border-top: solid 5px;
+}
+
+.cards__img-container {
+  height: 64px;
+  position: relative;
+  margin: 20px 5px 5px 0px;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.cards__card1 {
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+.cards__card2 {
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.cards__card3 {
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+.cards__card4 {
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+  .four-card {
+    max-width: 600px;
+  }
+  .four-card__title {
+    font-size: 3.6rem;
+  }
+  .cards {
+    position: relative;
+    margin-top: 70px;
+  }
+  .cards__card {
+    margin: 0 auto;
+  }
+  .cards__card1 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -290px;
+  }
+  .cards__card2 {
+    margin-bottom: 30px;
+  }
+  .cards__card4 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -290px;
+  }
+  .attribution {
+    margin: auto 0 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+
+body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-size: 1.5rem
+    font-family: "Poppins", sans-serif
+    background-color: $very-light-gray
+    color: $grayish-blue
+
+h1, h2
+    color: $very-dark-blue
+    font-weight: 700
+
+.light-weight
+    font-weight: 200
+
+.four-card
+    max-width: 500px
+    padding: 80px 30px 30px 30px
+
+.four-card__title
+    text-align: center
+    font-size: 2.4rem
+
+.four-card__text
+    margin: 20px 0
+    text-align: center
+
+.cards__card
+    max-width: 350px
+    margin: 30px auto 30px auto
+    padding: 25px
+    box-shadow: 5px 5px 40px hsla(234, 12%, 34%, .3)
+    border-radius: 10px
+    border-top: solid 5px
+
+.cards__img-container
+    height: 64px
+    position: relative
+    margin: 20px 5px 5px 0px
+
+.icon
+    display: block
+    position: absolute
+    right: 0
+
+.cards__card1
+    border-top-color: $cyan
+
+.cards__card2
+    border-top-color: $red
+
+.cards__card3
+    border-top-color: $orange
+
+.cards__card4
+    border-top-color: $blue
+
+@media (min-width: 1200px)
+    body
+        height: 100vh
+
+    .four-card
+        max-width: 600px
+
+    .four-card__title
+        font-size: 3.6rem
+
+    .cards
+        position: relative
+        margin-top: 70px
+
+    .cards__card
+        margin: 0 auto
+
+    .cards__card1
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -290px
+
+    .cards__card2
+        margin-bottom: 30px
+
+    .cards__card4
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: -290px
+
+    .attribution
+        margin: auto 0 0 0
